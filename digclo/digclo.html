@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Clock</title>
+    <title>DIGITAL CLOCK</title>
     <link rel="stylesheet" href="digclo.css">
 </head>
 <body>
 <div id="clock">
-    <h2>The time is now</h2>
+    <h2>THE TIME IS NOW</h2>
     <div id="time">
-        <div><span id="hour">00</span> <span>Hours</span></div>
-        <div><span id="minutes">00</span> <span>Minutes</span></div>
-        <div><span id="seconds">00</span> <span>Seconds</span></div>
-        <div><span id="ampm"></span></div>
+        <div><span id="HOUR">00</span> <span>Hours</span></div>
+        <div><span id="MINUTES">00</span> <span>Minutes</span></div>
+        <div><span id="SECONDS">00</span> <span>Seconds</span></div>
+        <div><span id="AMPM"></span></div>
     </div>
 </div>
 
 <script>
     function clock() {
-        var hours = document.getElementById('hour');
-        var minutes = document.getElementById('minutes');
-        var seconds = document.getElementById('seconds');
-        var ampm = document.getElementById('ampm');
+        var hours = document.getElementById('HOUR');
+        var minutes = document.getElementById('MINUTES');
+        var seconds = document.getElementById('SECONDS');
+        var ampm = document.getElementById('AMPM');
 
         var h = new Date().getHours();
         var m = new Date().getMinutes();
@@ -38,10 +38,10 @@
         m = (m < 10) ? "0" + m : m;
         s = (s < 10) ? "0" + s : s;
 
-        hours.innerHTML = h;
-        minutes.innerHTML = m;
-        seconds.innerHTML = s;
-        ampm.innerHTML = am;
+        HOUR.innerHTML = h;
+        MINUTES.innerHTML = m;
+        SECONDS.innerHTML = s;
+        AMPM.innerHTML = am;
     }
 
     var interval = setInterval(clock, 1000);
